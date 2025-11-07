@@ -38,7 +38,7 @@ const HomePage = () => {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-600 to-secondary-600">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection animation="fade-in">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
@@ -66,12 +66,12 @@ const HomePage = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-neutral-800/50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 section-alt">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection animation="slide-up">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-              <p className="text-lg text-neutral-600 dark:text-neutral-400">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 gradient-text">Our Services</h2>
+              <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
                 Specialized FinTech solutions tailored for your success
               </p>
             </div>
@@ -79,19 +79,19 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             {/* Hosting */}
             <AnimatedSection animation="slide-up" delay={100}>
-              <div className="bg-white dark:bg-neutral-800 rounded-2xl p-8 shadow-soft card-hover border border-neutral-200 dark:border-neutral-700 group">
-                <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-xl flex items-center justify-center mb-6">
-                  <Server className="h-6 w-6 text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-300" />
+              <div className="glass-effect rounded-2xl p-8 shadow-large card-hover group h-full">
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Server className="h-7 w-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">Hosting</h3>
+                <h3 className="text-2xl font-bold mb-4">Hosting</h3>
                 <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
                   High-availability hosting for MT4/MT5 and cTrader. 24/7 monitored, scalable, secure.
                 </p>
                 <Link
                   to="/hosting"
-                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-all duration-300 inline-flex items-center group hover:underline"
+                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
                 >
-                  Learn More 
+                  Learn More
                   <span className="ml-1 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
                 </Link>
               </div>
@@ -99,19 +99,19 @@ const HomePage = () => {
 
             {/* Platform Admin Service */}
             <AnimatedSection animation="slide-up" delay={200}>
-              <div className="bg-white dark:bg-neutral-800 rounded-2xl p-8 shadow-soft card-hover border border-neutral-200 dark:border-neutral-700 group">
-                <div className="w-12 h-12 bg-success-100 dark:bg-success-900/30 rounded-xl flex items-center justify-center mb-6">
-                  <Settings className="h-6 w-6 text-success-600 dark:text-success-400 group-hover:scale-110 transition-transform duration-300" />
+              <div className="glass-effect rounded-2xl p-8 shadow-large card-hover group h-full">
+                <div className="w-14 h-14 bg-gradient-to-br from-success-500 to-primary-500 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Settings className="h-7 w-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">Virtus Services</h3>
+                <h3 className="text-2xl font-bold mb-4">Virtus Services</h3>
                 <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
                   Complete platform management, monitoring, and technical support for your trading infrastructure.
                 </p>
                 <Link
                   to="/platform-admin"
-                  className="text-success-600 dark:text-success-400 hover:text-success-700 dark:hover:text-success-300 font-medium transition-all duration-300 inline-flex items-center group hover:underline"
+                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
                 >
-                  Learn More 
+                  Learn More
                   <span className="ml-1 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
                 </Link>
               </div>
@@ -119,19 +119,19 @@ const HomePage = () => {
 
             {/* Software */}
             <AnimatedSection animation="slide-up" delay={300}>
-              <div className="bg-white dark:bg-neutral-800 rounded-2xl p-8 shadow-soft card-hover border border-neutral-200 dark:border-neutral-700 group">
-                <div className="w-12 h-12 bg-accent-100 dark:bg-accent-900/30 rounded-xl flex items-center justify-center mb-6">
-                  <Code className="h-6 w-6 text-accent-600 dark:text-accent-400 group-hover:scale-110 transition-transform duration-300" />
+              <div className="glass-effect rounded-2xl p-8 shadow-large card-hover group h-full">
+                <div className="w-14 h-14 bg-gradient-to-br from-secondary-500 to-primary-600 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Code className="h-7 w-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">Software</h3>
+                <h3 className="text-2xl font-bold mb-4">Software</h3>
                 <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
                   APIs, CRM, and risk dashboards built for brokers.
                 </p>
                 <Link
                   to="/development"
-                  className="text-accent-600 dark:text-accent-400 hover:text-accent-700 dark:hover:text-accent-300 font-medium transition-all duration-300 inline-flex items-center group hover:underline"
+                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
                 >
-                  Learn More 
+                  Learn More
                   <span className="ml-1 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
                 </Link>
               </div>
@@ -140,16 +140,16 @@ const HomePage = () => {
 
           {/* CTA Section */}
           <AnimatedSection animation="scale-up">
-            <div className="text-center bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600 rounded-3xl p-12 text-white shadow-large">
+            <div className="text-center bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-12 text-white shadow-large">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to Elevate Your Trading Infrastructure?
               </h2>
-              <p className="text-xl mb-8 opacity-90">
+              <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
                 Let's discuss how our specialized solutions can enhance your trading platform's performance and reliability.
               </p>
               <Link
                 to="/contact"
-                className="bg-white text-primary-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-neutral-100 transition-all duration-300 shadow-medium hover:shadow-large transform hover:-translate-y-2 hover:scale-105"
+                className="inline-block bg-white text-primary-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-neutral-100 transition-all duration-300 shadow-medium hover:shadow-large transform hover:-translate-y-2 hover:scale-105"
               >
                 Get Started Today
               </Link>
