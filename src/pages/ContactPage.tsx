@@ -131,7 +131,7 @@ const ContactPage = () => {
       <section className="pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <AnimatedSection animation="slide-up">
-            <form action="https://formspree.io/f/manalakw" method="POST" className="space-y-6">
+            <form action="https://formspree.io/f/mjkjpdkv" method="POST" className="space-y-6">
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
