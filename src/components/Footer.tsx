@@ -4,121 +4,116 @@ import { Shield, Mail, Phone, MapPin, Clock, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white">
-      {/* Main Footer Content */}
+    <footer className="bg-slate-900 text-white">
       <div className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Company Info */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="lg:col-span-2">
-              <Link to="/" className="flex items-center mb-6">
-                <Shield className="h-8 w-8 text-primary-400 mr-3" />
-                <div>
+              <Link to="/" className="inline-flex items-center group mb-6">
+                <div className="p-2.5 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300">
+                  <Shield className="h-7 w-7 text-white" />
+                </div>
+                <div className="ml-3">
                   <div className="text-2xl font-bold">Virtus Systems</div>
-                  <div className="text-sm text-neutral-400">FinTech Infrastructure Solutions</div>
+                  <div className="text-sm text-gray-400 font-medium">FinTech Excellence</div>
                 </div>
               </Link>
-              <p className="text-neutral-300 mb-6 max-w-md leading-relaxed">
-                We provide enterprise-grade hosting, platform administration, and custom software development 
-                services specifically designed for brokers, trading platforms, and fintech companies worldwide.
+              <p className="text-gray-300 mb-8 max-w-md leading-relaxed text-base">
+                Enterprise-grade hosting, platform administration, and custom software development
+                for brokers, trading platforms, and fintech companies worldwide.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center text-neutral-300">
-                  <Mail className="h-5 w-5 text-primary-400 mr-3" />
-                  <a href="mailto:giorgos.v@virtus-systems.net" className="hover:text-primary-400 transition-colors">
-                    giorgos.v@virtus-systems.net
-                  </a>
+              <div className="space-y-4">
+                <a href="mailto:giorgos.v@virtus-systems.net" className="flex items-center text-gray-300 hover:text-primary-400 transition-colors group">
+                  <div className="p-2 bg-slate-800 rounded-lg group-hover:bg-primary-500/10 transition-colors">
+                    <Mail className="h-5 w-5 text-primary-400" />
+                  </div>
+                  <span className="ml-3">giorgos.v@virtus-systems.net</span>
+                </a>
+                <div className="flex items-center text-gray-300">
+                  <div className="p-2 bg-slate-800 rounded-lg">
+                    <Clock className="h-5 w-5 text-primary-400" />
+                  </div>
+                  <span className="ml-3">24/7 Support Available</span>
                 </div>
-                <div className="flex items-center text-neutral-300">
-                  <Clock className="h-5 w-5 text-primary-400 mr-3" />
-                  <span>24/7 Support Available</span>
-                </div>
-                <div className="flex items-center text-neutral-300">
-                  <MapPin className="h-5 w-5 text-primary-400 mr-3" />
-                  <span>Limassol Cyprus</span>
+                <div className="flex items-center text-gray-300">
+                  <div className="p-2 bg-slate-800 rounded-lg">
+                    <MapPin className="h-5 w-5 text-primary-400" />
+                  </div>
+                  <span className="ml-3">Limassol, Cyprus</span>
                 </div>
               </div>
             </div>
 
-            {/* Services */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+              <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/hosting" className="text-neutral-300 hover:text-primary-400 transition-all duration-300 flex items-center hover:translate-x-1">
+                  <Link to="/hosting" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
                     Hosting Services
-                    <ExternalLink className="h-3 w-3 ml-1" />
                   </Link>
                 </li>
                 <li>
-                  <Link to="/platform-admin" className="text-neutral-300 hover:text-primary-400 transition-all duration-300 flex items-center hover:translate-x-1">
-                    ↳ Virtus Services
-                    <ExternalLink className="h-3 w-3 ml-1" />
+                  <Link to="/platform-admin" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                    Virtus Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/virtus-toolbox" className="text-neutral-300 hover:text-primary-400 transition-all duration-300 flex items-center hover:translate-x-1">
-                    ↳ Virtus Toolbox
-                    <ExternalLink className="h-3 w-3 ml-1" />
+                  <Link to="/virtus-toolbox" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                    Virtus Toolbox
                   </Link>
                 </li>
                 <li>
-                  <Link to="/virtus-ecosystem" className="text-neutral-300 hover:text-primary-400 transition-all duration-300 flex items-center hover:translate-x-1">
+                  <Link to="/virtus-ecosystem" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
                     Virtus Ecosystem
-                    <ExternalLink className="h-3 w-3 ml-1" />
                   </Link>
                 </li>
                 <li>
-                  <Link to="/development" className="text-neutral-300 hover:text-primary-400 transition-all duration-300 flex items-center hover:translate-x-1">
+                  <Link to="/development" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
                     Custom Development
-                    <ExternalLink className="h-3 w-3 ml-1" />
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-neutral-300 hover:text-primary-400 transition-all duration-300 flex items-center hover:translate-x-1">
+                  <Link to="/contact" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
                     Contact Us
-                    <ExternalLink className="h-3 w-3 ml-1" />
                   </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Specializations */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">Specializations</h3>
-              <ul className="space-y-3 text-neutral-300">
-                <li>MetaTrader 4 & 5</li>
-                <li>cTrader Platforms</li>
-                <li>Trading APIs</li>
-                <li>Liquidity Bridges</li>
-                <li>Risk Management</li>
-                <li>CRM Systems</li>
-                <li>Client Portals</li>
-                <li>Custom Integrations</li>
+              <h3 className="text-lg font-bold mb-6 text-white">Specializations</h3>
+              <ul className="space-y-3">
+                <li className="text-gray-400 text-sm font-medium">MetaTrader 4 & 5</li>
+                <li className="text-gray-400 text-sm font-medium">cTrader Platforms</li>
+                <li className="text-gray-400 text-sm font-medium">Trading APIs</li>
+                <li className="text-gray-400 text-sm font-medium">Liquidity Bridges</li>
+                <li className="text-gray-400 text-sm font-medium">Risk Management</li>
+                <li className="text-gray-400 text-sm font-medium">CRM Systems</li>
+                <li className="text-gray-400 text-sm font-medium">Client Portals</li>
+                <li className="text-gray-400 text-sm font-medium">Custom Integrations</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-neutral-800 py-6 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      <div className="border-t border-slate-800 py-8 px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-sm text-neutral-400 mb-4 md:mb-0">
+            <div className="text-sm text-gray-400 mb-4 md:mb-0 font-medium">
               © 2025 Virtus Systems. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-all duration-300 hover:underline">
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
                 Privacy Policy
               </a>
-              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-all duration-300 hover:underline">
+              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
                 Terms of Service
               </a>
-              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-all duration-300 hover:underline">
+              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
                 Security
               </a>
-              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-all duration-300 hover:underline">
+              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
                 Compliance
               </a>
             </div>

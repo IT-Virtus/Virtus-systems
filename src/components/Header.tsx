@@ -55,34 +55,36 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800 z-50 shadow-soft">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center">
-            <Shield className="h-8 w-8 text-primary-600 dark:text-primary-400 mr-3" />
-            <div>
-              <div className="text-xl font-bold">Virtus Systems</div>
-              <div className="text-xs text-neutral-600 dark:text-neutral-400">Hosting • Platform Admin • Software</div>
+    <header className="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-slate-700/50 z-50">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <Link to="/" className="flex items-center group">
+            <div className="p-2 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <Shield className="h-6 w-6 text-white" />
+            </div>
+            <div className="ml-3">
+              <div className="text-xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">Virtus Systems</div>
+              <div className="text-xs text-gray-600 dark:text-gray-400 font-medium">FinTech Excellence</div>
             </div>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-2">
             <Link
               to="/"
-              className={`font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:scale-105 ${
-                isActive('/') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+              className={`font-semibold text-sm transition-all duration-300 px-4 py-2.5 rounded-xl ${
+                isActive('/')
+                  ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary-600 dark:hover:text-primary-400'
               }`}
             >
               Home
             </Link>
             <Link
               to="/hosting"
-              className={`font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:scale-105 ${
-                isActive('/hosting') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+              className={`font-semibold text-sm transition-all duration-300 px-4 py-2.5 rounded-xl ${
+                isActive('/hosting')
+                  ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary-600 dark:hover:text-primary-400'
               }`}
             >
               Hosting
@@ -92,25 +94,25 @@ const Header = () => {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsEcosystemOpen(!isEcosystemOpen)}
-                className={`font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:scale-105 flex items-center ${
-                  isEcosystemActive() 
-                    ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                    : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+                className={`font-semibold text-sm transition-all duration-300 px-4 py-2.5 rounded-xl flex items-center ${
+                  isEcosystemActive()
+                    ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30'
+                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary-600 dark:hover:text-primary-400'
                 }`}
               >
-                Virtus Ecosystem
+                Ecosystem
                 <ChevronDown className={`h-4 w-4 ml-1 transition-transform ${isEcosystemOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {isEcosystemOpen && (
-                <div className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-neutral-800 rounded-lg shadow-large border border-neutral-200 dark:border-neutral-700 py-2 z-50 animate-fade-in">
+                <div className="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-slate-800 rounded-2xl shadow-xl border border-gray-200 dark:border-slate-700 py-2 z-50 animate-fade-in">
                   <Link
                     to="/platform-admin"
                     onClick={() => setIsEcosystemOpen(false)}
-                    className={`block px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:translate-x-1 ${
+                    className={`block px-4 py-3 mx-2 text-sm font-semibold transition-all duration-200 rounded-xl ${
                       isActive('/platform-admin')
                         ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950'
-                        : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-primary-600 dark:hover:text-primary-400'
                     }`}
                   >
                     Virtus Services
@@ -118,10 +120,10 @@ const Header = () => {
                   <Link
                     to="/virtus-toolbox"
                     onClick={() => setIsEcosystemOpen(false)}
-                    className={`block px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:translate-x-1 ${
+                    className={`block px-4 py-3 mx-2 text-sm font-semibold transition-all duration-200 rounded-xl ${
                       isActive('/virtus-toolbox')
                         ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950'
-                        : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-primary-600 dark:hover:text-primary-400'
                     }`}
                   >
                     Virtus Toolbox
@@ -132,35 +134,30 @@ const Header = () => {
             
             <Link
               to="/development"
-              className={`font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:scale-105 ${
-                isActive('/development') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+              className={`font-semibold text-sm transition-all duration-300 px-4 py-2.5 rounded-xl ${
+                isActive('/development')
+                  ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary-600 dark:hover:text-primary-400'
               }`}
             >
-              Software Development
+              Development
             </Link>
             <Link
               to="/contact"
-              className={`font-medium transition-all duration-300 px-3 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:scale-105 ${
-                isActive('/contact') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
-              }`}
+              className={`font-semibold text-sm transition-all duration-300 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40`}
             >
               Contact
             </Link>
             
-            {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-all duration-300 hover:scale-110 hover:rotate-12"
+              className="p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (
-                <Sun className="h-5 w-5 text-yellow-500" />
+                <Sun className="h-5 w-5 text-amber-500" />
               ) : (
-                <Moon className="h-5 w-5 text-neutral-600 dark:text-neutral-400" />
+                <Moon className="h-5 w-5 text-gray-600 dark:text-gray-400" />
               )}
             </button>
           </div>
@@ -168,25 +165,24 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+              className="p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
             >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMenuOpen ? <X className="h-5 w-5 text-gray-700 dark:text-gray-300" /> : <Menu className="h-5 w-5 text-gray-700 dark:text-gray-300" />}
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 shadow-soft">
-          <div className="px-4 py-3 space-y-1">
+        <div className="md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-t border-gray-200 dark:border-slate-700">
+          <div className="px-4 py-4 space-y-2">
             <Link
               to="/"
               onClick={() => setIsMenuOpen(false)}
-              className={`block w-full text-left px-3 py-2 font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
-                isActive('/') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+              className={`block w-full text-left px-4 py-3 font-semibold rounded-xl transition-colors ${
+                isActive('/')
+                  ? 'text-white bg-primary-500 shadow-lg shadow-primary-500/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800'
               }`}
             >
               Home
@@ -194,41 +190,40 @@ const Header = () => {
             <Link
               to="/hosting"
               onClick={() => setIsMenuOpen(false)}
-              className={`block w-full text-left px-3 py-2 font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
-                isActive('/hosting') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+              className={`block w-full text-left px-4 py-3 font-semibold rounded-xl transition-colors ${
+                isActive('/hosting')
+                  ? 'text-white bg-primary-500 shadow-lg shadow-primary-500/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800'
               }`}
             >
               Hosting
             </Link>
             
-            {/* Mobile Ecosystem Menu */}
             <div>
               <button
                 onClick={() => setIsEcosystemOpen(!isEcosystemOpen)}
-                className={`flex items-center justify-between w-full text-left px-3 py-2 font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
-                  isEcosystemActive() 
-                    ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                    : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+                className={`flex items-center justify-between w-full text-left px-4 py-3 font-semibold rounded-xl transition-colors ${
+                  isEcosystemActive()
+                    ? 'text-white bg-primary-500 shadow-lg shadow-primary-500/30'
+                    : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800'
                 }`}
               >
-                Virtus Ecosystem
+                Ecosystem
                 <ChevronDown className={`h-4 w-4 transition-transform ${isEcosystemOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {isEcosystemOpen && (
-                <div className="ml-4 mt-1 space-y-1">
+                <div className="ml-4 mt-2 space-y-2">
                   <Link
                     to="/platform-admin"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsEcosystemOpen(false);
                     }}
-                    className={`block w-full text-left px-3 py-2 text-sm font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
+                    className={`block w-full text-left px-4 py-2.5 text-sm font-semibold rounded-xl transition-colors ${
                       isActive('/platform-admin')
-                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950'
-                        : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/50'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800'
                     }`}
                   >
                     Virtus Services
@@ -239,10 +234,10 @@ const Header = () => {
                       setIsMenuOpen(false);
                       setIsEcosystemOpen(false);
                     }}
-                    className={`block w-full text-left px-3 py-2 text-sm font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
+                    className={`block w-full text-left px-4 py-2.5 text-sm font-semibold rounded-xl transition-colors ${
                       isActive('/virtus-toolbox')
-                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950'
-                        : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/50'
+                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800'
                     }`}
                   >
                     Virtus Toolbox
@@ -254,39 +249,34 @@ const Header = () => {
             <Link
               to="/development"
               onClick={() => setIsMenuOpen(false)}
-              className={`block w-full text-left px-3 py-2 font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
-                isActive('/development') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
+              className={`block w-full text-left px-4 py-3 font-semibold rounded-xl transition-colors ${
+                isActive('/development')
+                  ? 'text-white bg-primary-500 shadow-lg shadow-primary-500/30'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800'
               }`}
             >
-              Software Development
+              Development
             </Link>
             <Link
               to="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className={`block w-full text-left px-3 py-2 font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ${
-                isActive('/contact') 
-                  ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950' 
-                  : 'text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400'
-              }`}
+              className="block w-full text-left px-4 py-3 font-semibold rounded-xl bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg shadow-primary-500/30"
             >
               Contact
             </Link>
             
-            {/* Mobile Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="flex items-center w-full text-left px-3 py-2 font-medium rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-neutral-700 dark:text-neutral-300"
+              className="flex items-center w-full text-left px-4 py-3 font-semibold rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors text-gray-700 dark:text-gray-300"
             >
               {isDarkMode ? (
                 <>
-                  <Sun className="h-5 w-5 text-yellow-500 mr-3" />
+                  <Sun className="h-5 w-5 text-amber-500 mr-3" />
                   Light Mode
                 </>
               ) : (
                 <>
-                  <Moon className="h-5 w-5 text-neutral-600 mr-3" />
+                  <Moon className="h-5 w-5 text-gray-600 mr-3" />
                   Dark Mode
                 </>
               )}
