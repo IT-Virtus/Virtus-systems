@@ -23,17 +23,17 @@ const Footer = () => {
                 for brokers, trading platforms, and fintech companies worldwide.
               </p>
               <div className="space-y-4">
-                <a href="mailto:giorgos.v@virtus-systems.net" className="flex items-center text-gray-300 hover:text-primary-400 transition-colors group">
+                <a href="mailto:it@virtus-systems.net" className="flex items-center text-gray-300 hover:text-primary-400 transition-colors group">
                   <div className="p-2 bg-slate-800 rounded-lg group-hover:bg-primary-500/10 transition-colors">
                     <Mail className="h-5 w-5 text-primary-400" />
                   </div>
-                  <span className="ml-3">giorgos.v@virtus-systems.net</span>
+                  <span className="ml-3">it@virtus-systems.net</span>
                 </a>
                 <div className="flex items-center text-gray-300">
                   <div className="p-2 bg-slate-800 rounded-lg">
                     <Clock className="h-5 w-5 text-primary-400" />
                   </div>
-                  <span className="ml-3">24/7 Support Available</span>
+                  <span className="ml-3">24/5 Support Available</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <div className="p-2 bg-slate-800 rounded-lg">

@@ -133,7 +133,7 @@ const ContactPage = () => {
           <AnimatedSection animation="slide-up">
             <form onSubmit={handleSubmit} className="space-y-6">
             {/* Hidden fields for Formspree */}
-            <input type="hidden" name="_to" value="giorgos.v@virtus-systems.net" />
+            <input type="hidden" name="_to" value="it@virtus-systems.net" />
             <input type="hidden" name="_subject" value="New Contact Form Submission from Virtus Systems" />
             <input type="hidden" name="_next" value="https://virtus-systems-finte-hpet.bolt.host/contact" />
             <input type="hidden" name="_captcha" value="false" />
@@ -266,8 +266,8 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Email</h3>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  <a href="mailto:giorgos.v@virtus-systems.net" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    giorgos.v@virtus-systems.net
+                  <a href="mailto:it@virtus-systems.net" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                    it@virtus-systems.net
                   </a>
                 </p>
               </div>
