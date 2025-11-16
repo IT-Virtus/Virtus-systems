@@ -16,7 +16,7 @@ import VirtusToolboxPage from './pages/VirtusToolboxPage';
 function App() {
   return (
     <HelmetProvider>
-      <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 transition-colors duration-500 scroll-smooth">
+      <div className="min-h-screen bg-neutral-50 text-neutral-900 transition-colors duration-500 scroll-smooth">
         <ProgressBar />
         <Header />
         <main>

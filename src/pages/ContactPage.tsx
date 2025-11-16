@@ -120,7 +120,7 @@ const ContactPage = () => {
             </h1>
           </AnimatedSection>
           <AnimatedSection animation="slide-up" delay={200}>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
               Tell us what you need — hosting, admin, or software.
             </p>
           </AnimatedSection>
@@ -150,7 +150,7 @@ const ContactPage = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-xl bg-white dark:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
+                  className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
                   placeholder="Your name"
                 />
               </div>
@@ -165,7 +165,7 @@ const ContactPage = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-xl bg-white dark:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
+                  className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
                   placeholder="your@email.com"
                 />
               </div>
@@ -182,7 +182,7 @@ const ContactPage = () => {
                 value={formData.company}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-xl bg-white dark:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
+                className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
                 placeholder="Your company"
               />
             </div>
@@ -197,7 +197,7 @@ const ContactPage = () => {
                 value={formData.service}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-xl bg-white dark:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
+                className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
               >
                 <option value="">Select a service</option>
                 <option value="hosting">Hosting</option>
@@ -218,7 +218,7 @@ const ContactPage = () => {
                 onChange={handleInputChange}
                 required
                 rows={5}
-                className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-xl bg-white dark:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400 resize-vertical"
+                className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400 resize-vertical"
                 placeholder="Tell us about your requirements..."
               ></textarea>
             </div>
@@ -226,8 +226,8 @@ const ContactPage = () => {
             {formStatus !== 'idle' && (
               <div className={`p-4 rounded-xl flex items-center ${
                 formStatus === 'success' 
-                  ? 'bg-success-50 dark:bg-success-900/20 text-success-800 dark:text-success-400' 
-                  : 'bg-error-50 dark:bg-error-900/20 text-error-800 dark:text-error-400'
+                  ? 'bg-success-50/20 text-success-800' 
+                  : 'bg-error-50/20 text-error-800'
               }`}>
                 {formStatus === 'success' ? (
                   <CheckCircle className="h-5 w-5 mr-2" />
@@ -258,22 +258,22 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Info Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-neutral-800/50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection animation="slide-up">
             <h2 className="text-3xl font-bold mb-8">Other Ways to Reach Us</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Email</h3>
-                <p className="text-neutral-600 dark:text-neutral-400">
-                  <a href="mailto:it@virtus-systems.net" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <p className="text-neutral-600">
+                  <a href="mailto:it@virtus-systems.net" className="hover:text-primary-600 transition-colors">
                     it@virtus-systems.net
                   </a>
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-4">Response Time</h3>
-                <p className="text-neutral-600 dark:text-neutral-400">
+                <p className="text-neutral-600">
                   We typically respond within 24 hours (24/5 support)
                 </p>
               </div>

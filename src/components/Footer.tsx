@@ -23,8 +23,8 @@ const Footer = () => {
                 for brokers, trading platforms, and fintech companies worldwide.
               </p>
               <div className="space-y-4">
-                <a href="mailto:it@virtus-systems.net" className="flex items-center text-gray-300 hover:text-primary-400 transition-colors group">
-                  <div className="p-2 bg-slate-800 rounded-lg group-hover:bg-primary-500/10 transition-colors">
+                <a href="mailto:it@virtus-systems.net" className="flex items-center text-gray-300 hover:text-primary-4 transition-colors group">
+                  <div className="p-2 bg-slate-800 rounded-lg group-hover:bg-primary-50/10 transition-colors">
                     <Mail className="h-5 w-5 text-primary-400" />
                   </div>
                   <span className="ml-3">it@virtus-systems.net</span>
@@ -48,32 +48,32 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/hosting" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                  <Link to="/hosting" className="text-gray-400 hover:text-primary-4 transition-colors font-medium text-sm">
                     Hosting Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/platform-admin" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                  <Link to="/platform-admin" className="text-gray-400 hover:text-primary-4 transition-colors font-medium text-sm">
                     Virtus Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/virtus-toolbox" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                  <Link to="/virtus-toolbox" className="text-gray-400 hover:text-primary-4 transition-colors font-medium text-sm">
                     Virtus Toolbox
                   </Link>
                 </li>
                 <li>
-                  <Link to="/virtus-ecosystem" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                  <Link to="/virtus-ecosystem" className="text-gray-400 hover:text-primary-4 transition-colors font-medium text-sm">
                     Virtus Ecosystem
                   </Link>
                 </li>
                 <li>
-                  <Link to="/development" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                  <Link to="/development" className="text-gray-400 hover:text-primary-4 transition-colors font-medium text-sm">
                     Custom Development
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-gray-400 hover:text-primary-400 transition-colors font-medium text-sm">
+                  <Link to="/contact" className="text-gray-400 hover:text-primary-4 transition-colors font-medium text-sm">
                     Contact Us
                   </Link>
                 </li>
@@ -104,16 +104,16 @@ const Footer = () => {
               © 2025 Virtus Systems. All rights reserved.
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
+              <a href="#" className="text-gray-400 hover:text-primary-4 transition-colors font-medium">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
+              <a href="#" className="text-gray-400 hover:text-primary-4 transition-colors font-medium">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
+              <a href="#" className="text-gray-400 hover:text-primary-4 transition-colors font-medium">
                 Security
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors font-medium">
+              <a href="#" className="text-gray-400 hover:text-primary-4 transition-colors font-medium">
                 Compliance
               </a>
             </div>

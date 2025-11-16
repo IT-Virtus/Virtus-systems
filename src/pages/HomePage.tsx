@@ -22,7 +22,7 @@ const HomePage = () => {
             </h1>
           </AnimatedSection>
           <AnimatedSection animation="slide-up" delay={200}>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
               We provide hosting, platform administration, and software for brokers and fintech teams.
             </p>
           </AnimatedSection>
@@ -71,7 +71,7 @@ const HomePage = () => {
           <AnimatedSection animation="slide-up">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 gradient-text">Our Services</h2>
-              <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+              <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
                 Specialized FinTech solutions tailored for your success
               </p>
             </div>
@@ -84,12 +84,12 @@ const HomePage = () => {
                   <Server className="h-7 w-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Hosting</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
+                <p className="text-neutral-600 leading-relaxed mb-6">
                   High-availability hosting for MT4/MT5 and cTrader. 24/5 monitored, scalable, secure.
                 </p>
                 <Link
                   to="/hosting"
-                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
+                  className="text-primary-600 hover:text-primary-700 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
                 >
                   Learn More
                   <span className="ml-1 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
@@ -104,12 +104,12 @@ const HomePage = () => {
                   <Settings className="h-7 w-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Virtus Services</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
+                <p className="text-neutral-600 leading-relaxed mb-6">
                   Complete platform management, monitoring, and technical support for your trading infrastructure.
                 </p>
                 <Link
                   to="/platform-admin"
-                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
+                  className="text-primary-600 hover:text-primary-700 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
                 >
                   Learn More
                   <span className="ml-1 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
@@ -124,12 +124,12 @@ const HomePage = () => {
                   <Code className="h-7 w-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Software</h3>
-                <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
+                <p className="text-neutral-600 leading-relaxed mb-6">
                   APIs, CRM, and risk dashboards built for brokers.
                 </p>
                 <Link
                   to="/development"
-                  className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
+                  className="text-primary-600 hover:text-primary-700 font-semibold transition-all duration-300 inline-flex items-center group hover:underline"
                 >
                   Learn More
                   <span className="ml-1 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
