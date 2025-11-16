@@ -131,12 +131,7 @@ const ContactPage = () => {
       <section className="pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <AnimatedSection animation="slide-up">
-            <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Hidden fields for Formspree */}
-            <input type="hidden" name="_to" value="it@virtus-systems.net" />
-            <input type="hidden" name="_subject" value="New Contact Form Submission from Virtus Systems" />
-            <input type="hidden" name="_next" value="https://virtus-systems-finte-hpet.bolt.host/contact" />
-            <input type="hidden" name="_captcha" value="false" />
+            <form action="https://formspree.io/f/manalakw" method="POST" className="space-y-6">
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -147,8 +142,6 @@ const ContactPage = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
                   placeholder="Your name"
@@ -162,8 +155,6 @@ const ContactPage = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
                   placeholder="your@email.com"
@@ -179,8 +170,6 @@ const ContactPage = () => {
                 type="text"
                 id="company"
                 name="company"
-                value={formData.company}
-                onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
                 placeholder="Your company"
@@ -194,8 +183,6 @@ const ContactPage = () => {
               <select
                 id="service"
                 name="service"
-                value={formData.service}
-                onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400"
               >
@@ -214,8 +201,6 @@ const ContactPage = () => {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleInputChange}
                 required
                 rows={5}
                 className="w-full px-4 py-3 border border-neutral-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-400 resize-vertical"
@@ -223,34 +208,11 @@ const ContactPage = () => {
               ></textarea>
             </div>
 
-            {formStatus !== 'idle' && (
-              <div className={`p-4 rounded-xl flex items-center ${
-                formStatus === 'success' 
-                  ? 'bg-success-50/20 text-success-800' 
-                  : 'bg-error-50/20 text-error-800'
-              }`}>
-                {formStatus === 'success' ? (
-                  <CheckCircle className="h-5 w-5 mr-2" />
-                ) : (
-                  <AlertCircle className="h-5 w-5 mr-2" />
-                )}
-                {formMessage}
-              </div>
-            )}
-
             <button
               type="submit"
-              disabled={formStatus === 'submitting'}
-              className="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 disabled:from-primary-400 disabled:to-secondary-400 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 disabled:cursor-not-allowed shadow-medium hover:shadow-large transform hover:-translate-y-1 hover:scale-105 disabled:transform-none disabled:hover:scale-100"
+              className="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 shadow-medium hover:shadow-large transform hover:-translate-y-1 hover:scale-105"
             >
-              {formStatus === 'submitting' ? (
-                <div className="flex items-center justify-center">
-                  <LoadingSpinner size="sm" className="mr-2" />
-                  Sending...
-                </div>
-              ) : (
-                'Send Message'
-              )}
+              Send Message
             </button>
           </form>
           </AnimatedSection>
