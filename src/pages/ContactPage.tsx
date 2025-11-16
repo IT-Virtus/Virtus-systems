@@ -132,7 +132,8 @@ const ContactPage = () => {
         <div className="max-w-2xl mx-auto">
           <AnimatedSection animation="slide-up">
             <form action="https://formspree.io/f/mjkjpdkv" method="POST" className="space-y-6">
-            
+            <input type="hidden" name="_to" value="it@virtus-systems.net" />
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
