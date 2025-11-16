@@ -266,8 +266,8 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Email</h3>
                 <p className="text-neutral-600">
-                  <a href="mailto:it@virtus-systems.net" className="hover:text-primary-600 transition-colors">
-                    it@virtus-systems.net
+                  <a href="mailto:giorgos.v@virtus-systems.net" className="hover:text-primary-600 transition-colors">
+                    giorgos.v@virtus-systems.net
                   </a>
                 </p>
               </div>
