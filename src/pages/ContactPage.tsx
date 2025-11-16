@@ -274,7 +274,7 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Response Time</h3>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  We typically respond within 24 hours during business days
+                  We typically respond within 24 hours (24/5 support)
                 </p>
               </div>
             </div>
