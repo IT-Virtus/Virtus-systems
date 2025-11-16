@@ -45,7 +45,7 @@ const ContactPage = () => {
     setFormStatus('submitting');
     
     try {
-      const response = await fetch('https://formspree.io/f/xeornegq', {
+      const response = await fetch('https://formspree.io/f/manalakw', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -82,7 +82,7 @@ const ContactPage = () => {
     const formData = new FormData(form);
     
     try {
-      const response = await fetch('https://formspree.io/f/xeornegq', {
+      const response = await fetch('https://formspree.io/f/manalakw', {
         method: 'POST',
         body: formData,
         headers: {
