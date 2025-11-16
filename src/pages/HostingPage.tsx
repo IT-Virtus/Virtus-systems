@@ -81,7 +81,7 @@ const HostingPage = () => {
               <div className="w-12 h-12 bg-secondary-100 dark:bg-secondary-900/30 rounded-xl flex items-center justify-center mb-6">
                 <Monitor className="h-6 w-6 text-secondary-600 dark:text-secondary-400" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">24/7 Monitoring</h3>
+              <h3 className="text-xl font-semibold mb-4">24/5 Monitoring</h3>
               <p className="text-neutral-600 dark:text-neutral-400">
                 Proactive monitoring with automated alerts, performance tracking, and immediate incident response.
               </p>
@@ -178,9 +178,9 @@ const HostingPage = () => {
                 <CheckCircle className="h-5 w-5 text-success-600 dark:text-success-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">24/7 Expert Support</h3>
+                <h3 className="text-xl font-semibold mb-2">24/5 Expert Support</h3>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  Dedicated support team with trading platform expertise available around the clock.
+                  Dedicated support team with trading platform expertise available during business days.
                 </p>
               </div>
             </div>

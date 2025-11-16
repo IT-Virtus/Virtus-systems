@@ -142,7 +142,7 @@ const VirtusEcosystemPage = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Expert Support</h3>
               <p className="text-neutral-600 dark:text-neutral-400">
-                Single point of contact for all ecosystem components with 24/7 expert support.
+                Single point of contact for all ecosystem components with 24/5 expert support.
               </p>
             </div>
             <div className="text-center">

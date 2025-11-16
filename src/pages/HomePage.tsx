@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className="pt-16">
       <SEOHead 
         title="Virtus Systems | Simple, Reliable FinTech Infrastructure"
-        description="We provide hosting, platform administration, and software for brokers and fintech teams. 50+ active clients, 99.99% uptime SLA, 24/7 expert support."
+        description="We provide hosting, platform administration, and software for brokers and fintech teams. 50+ active clients, 99.99% uptime SLA, 24/5 expert support."
         keywords="fintech infrastructure, broker hosting, MetaTrader hosting, trading platform, cTrader, platform administration"
       />
       
@@ -56,7 +56,7 @@ const HomePage = () => {
               </AnimatedSection>
               <AnimatedSection animation="scale-up" delay={300}>
                 <div>
-                  <div className="text-4xl md:text-5xl font-bold mb-2 hover:scale-110 transition-transform duration-300">24/7</div>
+                  <div className="text-4xl md:text-5xl font-bold mb-2 hover:scale-110 transition-transform duration-300">24/5</div>
                   <div className="text-lg opacity-90">Expert Support</div>
                 </div>
               </AnimatedSection>
@@ -85,7 +85,7 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Hosting</h3>
                 <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6">
-                  High-availability hosting for MT4/MT5 and cTrader. 24/7 monitored, scalable, secure.
+                  High-availability hosting for MT4/MT5 and cTrader. 24/5 monitored, scalable, secure.
                 </p>
                 <Link
                   to="/hosting"

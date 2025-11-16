@@ -385,7 +385,7 @@ const VirtusToolboxPage = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  Single point of contact for all toolbox components with 24/7 expert support and comprehensive training.
+                  Single point of contact for all toolbox components with 24/5 expert support and comprehensive training.
                 </p>
               </div>
             </div>

@@ -15,7 +15,7 @@ const PlatformAdminPage = () => {
             Complete Trading Platform Management & Technical Excellence
           </p>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Fully managed setup, optimization, and maintenance with secure, high-performance server configurations. Compliance with industry security and operational standards, backed by 24/7 monitoring, support, and troubleshooting.
+            Fully managed setup, optimization, and maintenance with secure, high-performance server configurations. Compliance with industry security and operational standards, backed by 24/5 monitoring, support, and troubleshooting.
           </p>
           <Link
             to="/contact"
@@ -72,7 +72,7 @@ const PlatformAdminPage = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Infrastructure Monitoring & Support</h3>
               <p className="text-neutral-600 dark:text-neutral-400">
-                24/7 uptime monitoring with instant incident alerts. Rapid troubleshooting and issue resolution. Ongoing technical advisory and optimization services.
+                24/5 uptime monitoring with instant incident alerts. Rapid troubleshooting and issue resolution. Ongoing technical advisory and optimization services.
               </p>
             </div>
 
